@@ -1,0 +1,74 @@
+#include <Servo.h> 
+
+Servo esc1;
+Servo esc2;
+Servo esc3;
+Servo esc4;
+
+int speedvalue;
+int arm      = 1000;
+int steady   = 300;
+int initiate = 0;
+
+
+void setup() {
+  esc1.attach(8); 
+  esc2.attach(9);
+  esc3.attach(10);
+  esc4.attach(11);
+  esc1.writeMicroseconds(arm);
+  esc2.writeMicroseconds(arm);
+  esc3.writeMicroseconds(arm);
+  esc4.writeMicroseconds(arm);
+}
+
+
+void loop() {
+  if (initiate < 1) {
+    throttleUp();
+    initiate = 1;
+  }
+
+  if (initiate < 2) {
+    for (int count = 0; count < 5; count++) {
+      speedvalue = speedvalue + 50;
+      esc1.writeMicroseconds(speedvalue);
+      esc2.writeMicroseconds(speedvalue);
+      esc3.writeMicroseconds(speedvalue);
+      esc4.writeMicroseconds(speedvalue);
+      delay(1000);
+    }
+    
+    for (int count = 0; count < 12; count++) {
+      speedvalue = speedvalue - 50;
+      esc1.writeMicroseconds(speedvalue);
+      esc2.writeMicroseconds(speedvalue);
+      esc3.writeMicroseconds(speedvalue);
+      esc4.writeMicroseconds(speedvalue);
+      delay(1000);
+    }
+    
+    initiate = 2;
+  }
+  
+  
+  //Deatach ESC's
+  esc1.detach();
+  esc2.detach();
+  esc3.detach();
+  esc4.detach();
+} 
+
+
+void throttleUp() {
+  speedvalue = arm;
+  
+  for (int count = 0; count < steady; count++) {
+    esc1.writeMicroseconds(speedvalue);
+    esc2.writeMicroseconds(speedvalue);
+    esc3.writeMicroseconds(speedvalue);
+    esc4.writeMicroseconds(speedvalue);
+    speedvalue = speedvalue + 1;
+    delay(15);
+  }
+}
