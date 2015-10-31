@@ -21,16 +21,16 @@ This is an open source project with rights to the public to download, change, an
 <H2>Software Used</H2>
 <ul>
   <li>Arduino IDE</li>
-<ul>
+</ul>
 
 <H2>Contact Info</H2>
 
 <H5>Ryan Kopp</H5>
 <ul>
-<li>email: ryank1030@gmail.com</li>
+  <li>email: ryank1030@gmail.com</li>
 </ul>
 
 <H5>Duane Classen</H5>
 <ul>
-<li>email: d.classen95@gmail.com</li>
+  <li>email: d.classen95@gmail.com</li>
 </ul>
