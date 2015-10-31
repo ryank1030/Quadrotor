@@ -11,6 +11,8 @@ The Arduino is a flexbile system that enables quick and easy manipulation of man
 <li>2 of : Propeller set 12X45 EPP Style (Black)[Propellers]</li>
 <li>1 of : SparkFun Triple Axis Accelerometer & Gyro Breakout (MPU-6050)[Accelerometer & Gyrometer]</li>
 </ul>
+*parts have not arrived for the project yet so there will be a delay on the code
+
 
 <H2>Copyright</H2>
 
