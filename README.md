@@ -18,6 +18,11 @@ The Arduino is a flexbile system that enables quick and easy manipulation of man
 
 This is an open source project with rights to the public to download, change, and modify without further consent. For further information on copyright please refer to the license document.
 
+<H2>Software Used</H2>
+<ul>
+  <li>Arduino IDE</li>
+<ul>
+
 <H2>Contact Info</H2>
 
 <H5>Ryan Kopp</H5>
@@ -27,5 +32,5 @@ This is an open source project with rights to the public to download, change, an
 
 <H5>Duane Classen</H5>
 <ul>
-<li>email: </li>
+<li>email: d.classen95@gmail.com</li>
 </ul>
