@@ -12,11 +12,17 @@ The Arduino is a flexbile system that enables quick and easy manipulation of man
 <li>1 of : SparkFun Triple Axis Accelerometer & Gyro Breakout (MPU-6050)[Accelerometer & Gyrometer]</li>
 </ul>
 
+<H2>Copyright</H2>
+
+This is an open source project with rights to the public to download, change, and modify without further consent. For further information on copyright please refer to the license document.
+
 <H2>Contact Info</H2>
+
 <H5>Ryan Kopp</H5>
 <ul>
 <li>email: ryank1030@gmail.com</li>
 </ul>
+
 <H5>Duane Classen</H5>
 <ul>
 <li>email: </li>
