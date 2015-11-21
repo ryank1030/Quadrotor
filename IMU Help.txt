@@ -1,0 +1,55 @@
+Gyro:
+
+gyroRate = (gyroAdc-gyroZero)/sensitivity - where gyroAdc are the readed value from our sensor,
+gyroZero is the value when it is stationary (this is done in the code - look in the "Setup" section) 
+while sensitivity is the sensitivity found in the datasheet, but translated into quids.
+
+sensitivity to quids example:
+
+if the sensitivity is 3.33mV / deg / s for the 4xOUT 
+= sensitivity / 3.3 * 1023
+= 0.00333/3.3*1023=1.0323
+
+gyroRate = units(deg / s)
+
+gyroAngle += gyroRate * dtime / 1000
+
+dtime = The time difference since the last loop. (Use the millis() function in arduino to calculate delta time)
+
+**The gyro is accurate for short time due to its drift
+
+
+
+Accelerometer:
+
+accVal = accAdc-accZero - where accADC is the analog reading, accZero is the value output at 0g (can also be
+found on the datasheet),
+
+*You will see that the zero voltage at 0g is approximately 1.5V, to translate this into quids, 
+*you again have to use this equation: zeroVoltage/3.3*1023.
+*So in this example I get:
+*1.5/3.3*1023=465.
+
+
+Pitch = atan2(accYval, accZval) + pi
+
+Roll = atan2(accXval, accZval) + pi
+
+**the values for Pitch and Roll are in radians, to get degrees use RAD_TO_DEG in Arduino IDE
+**or multiply by 57.295779513082320876798154814105
+
+
+
+
+Kalman Filter:
+
+angle = 0.98 *(angle+gyro*dt) + 0.02*acc - you can fine tune the numbers to whatever you like. 
+Just remember that the sum must be 1.
+
+This will give a smoother angle by combineing the accelerometer and the gyro
+
+
+
+
+
+Ref: http://www.instructables.com/id/Guide-to-gyro-and-accelerometer-with-Arduino-inclu/
