@@ -13,4 +13,10 @@ void loop()
 int throttle = analogRead(throttlePin);
 throttle = map(throttle, 0, 1023, 0, 179);
 esc.write(throttle);
+<<<<<<< HEAD
 }
+=======
+}
+
+ref: https://dronesandrovs.wordpress.com/2012/11/24/how-to-control-a-brushless-motor-esc-with-arduino/
+>>>>>>> origin/master

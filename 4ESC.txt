@@ -71,4 +71,10 @@ void throttleUp() {
     speedvalue = speedvalue + 1;
     delay(15);
   }
+<<<<<<< HEAD
 }
+=======
+}
+
+ref: https://gist.github.com/vitorleal/9043485
+>>>>>>> origin/master
