@@ -78,12 +78,13 @@ Servo motorBR;
 double yaw, pitch, roll;
 int counterSpd = 1;  //speed at witcht the motors counter the tilt
 int input = 0;
-int spdFL = 1064;     //defualt speed to start the program
-int spdFR = 1064;
-int spdBL = 1064;
-int spdBR = 1064;
+int spdFL = 1064 - 10;     //defualt speed to start the program
+int spdFR = 1064 - 6;
+int spdBL = 1064 + 6;
+int spdBR = 1064 + 10;
 
-int deg[25] {0,2,3,4,5,7,9,11,13,15,17,19,21,23,25,27,29,31,33,35,37,39,41,43,45};
+int deg[25] {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+//int deg[25] {0,1,2,4,6,9,15,20,30,40,60,18,20,22,25,27,29,31,33,35,37,39,41,43,45}; not bad at small angles
 int deg1 = 1;   //setting adjustment values for varying degrees
 int deg2 = 2;
 int deg3 = 3;
