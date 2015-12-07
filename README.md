@@ -11,17 +11,27 @@ The Arduino is a flexbile system that enables quick and easy manipulation of man
 <li>4 of : New jDrones 20A ESC (updated Firmware)[Electronic Speed Controller]</li>
 <li>2 of : Propeller set 12X45 EPP Style (Black)[Propellers]</li>
 <li>1 of : SparkFun Triple Axis Accelerometer & Gyro Breakout (MPU-6050)[Accelerometer & Gyrometer]</li>
+<li>1 of : Arduino Uno</li>
 </ul>
-*parts have not arrived for the project yet so there will be a delay on the code
 
 
 <H2>Copyright</H2>
 
 This is an open source project with rights to the public to download, change, and modify without further consent. For further information on copyright please refer to the license document.
 
+<H2>User Manual</H2>
+1. Connect the MPU-6050 sensor to the Arduino Uno following the circuit diagram.
+2. Run the MPU6050_Calibration.ino file with the MPU-6050 connected on a flat, level surface.
+3. Input the offset values of your chip (every chip is different) into IMU_Flight_Test.ino.
+4. Run the ESC_4motor_init.ino program on the Arduino Uno with everything connected (do not run this program twice because the Motors will start at full power).
+5. Run the IMU_Flight_Test.ino program. This program will promt if there are errors with sensor.
+6. Give serial input to start the IMU_Flight_Test.ino program and values should be comming on screen.
+7. To control use keyboard serial input: <ul><li>1,2,3 are decrement speed for all</li> <li>4,5,6 are increment speed for all</li> <li>q,w control the speed of front right motor</li> <li>e,r control the speed of front left motor</li> <li>a,s control the speed of back left motor</li> <li>d,f control the speed of back right motor</li> <li>k will kill the program and detach the motors.</li></ul>
+
 <H2>Software Used</H2>
 <ul>
   <li>Arduino IDE</li>
+  <li>https://github.com/jrowberg/i2cdevlib/tree/master/Arduino/MPU6050</li>
 </ul>
 
 <H2>Contact Info</H2>
