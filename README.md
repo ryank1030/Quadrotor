@@ -28,6 +28,7 @@ This is an open source project with rights to the public to download, change, an
 5. Run the IMU_Flight_Test.ino program. This program will promt if there are errors with sensor.
 6. Give serial input to start the IMU_Flight_Test.ino program and values should be comming on screen.
 7. To control use keyboard serial input: <ul><li>1,2,3 are decrement speed for all</li> <li>4,5,6 are increment speed for all</li> <li>q,w control the speed of front right motor</li> <li>e,r control the speed of front left motor</li> <li>a,s control the speed of back left motor</li> <li>d,f control the speed of back right motor</li> <li>k will kill the program and detach the motors.</li></ul>
+8. The code will only work for small angle correction right now and will overcompensate at large angles. The bugs are being worked out.
 
 <H2>Software Used</H2>
 <ul>
