@@ -12,6 +12,7 @@ The Arduino is a flexbile system that enables quick and easy manipulation of man
 <li>2 of : Propeller set 12X45 EPP Style (Black)[Propellers]</li>
 <li>1 of : SparkFun Triple Axis Accelerometer & Gyro Breakout (MPU-6050)[Accelerometer & Gyrometer]</li>
 <li>1 of : Arduino Uno</li>
+<li>1 of : DIY frame (ours is made of wood)</li>
 </ul>
 
 
@@ -20,7 +21,7 @@ The Arduino is a flexbile system that enables quick and easy manipulation of man
 This is an open source project with rights to the public to download, change, and modify without further consent. For further information on copyright please refer to the license document.
 
 <H2>User Manual</H2>
-1. Connect the MPU-6050 sensor to the Arduino Uno following the circuit diagram.
+1. Connect the MPU-6050 sensor to the Arduino Uno following the circuit diagram and attach to frame.
 2. Run the MPU6050_Calibration.ino file with the MPU-6050 connected on a flat, level surface.
 3. Input the offset values of your chip (every chip is different) into IMU_Flight_Test.ino.
 4. Run the ESC_4motor_init.ino program on the Arduino Uno with everything connected (do not run this program twice because the Motors will start at full power).
