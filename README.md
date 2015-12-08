@@ -21,7 +21,7 @@ The Arduino is a flexbile system that enables quick and easy manipulation of man
 This is an open source project with rights to the public to download, change, and modify without further consent. For further information on copyright please refer to the license document.
 
 <H2>User Manual</H2>
-1. Connect the MPU-6050 sensor to the Arduino Uno following the circuit diagram and attach to frame.
+1. Connect the MPU-6050 sensor to the Arduino Uno following the circuit diagram and attach everything to frame.
 2. Run the MPU6050_Calibration.ino file with the MPU-6050 connected on a flat, level surface.
 3. Input the offset values of your chip (every chip is different) into IMU_Flight_Test.ino.
 4. Run the ESC_4motor_init.ino program on the Arduino Uno with everything connected (do not run this program twice because the Motors will start at full power).
