@@ -31,7 +31,7 @@ This is an open source project with rights to the public to download, change, an
 <H2>Software Used</H2>
 <ul>
   <li>Arduino IDE</li>
-  <li>https://github.com/jrowberg/i2cdevlib/tree/master/Arduino/MPU6050</li>
+  <li>https://github.com/jrowberg/i2cdevlib/tree/master/Arduino/MPU6050 (i2cdev and MPU6050 libraries)</li>
 </ul>
 
 <H2>Contact Info</H2>
